@@ -1,4 +1,4 @@
-﻿node {
+node {
     stage('Preparation') {
         catchError(buildResult: 'SUCCESS') {
             sh 'docker stop samplerunning'
@@ -6,9 +6,9 @@
         }
     }
     stage('Build') {
-        build 'BuildSampleApp'  
+        build 'BuildSampleApp'
     }
     stage('Results') {
-        build 'TestSampleApp' 
+        build 'TestSampleApp'
     }
 }
