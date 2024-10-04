@@ -6,9 +6,9 @@
         }
     }
     stage('Build') {
-        build 'BuildSampleApp'  # Ensure this matches your actual build job
+        build 'BuildSampleApp'  
     }
     stage('Results') {
-        build 'TestSampleApp'  # Ensure this matches your actual test job
+        build 'TestSampleApp' 
     }
 }
